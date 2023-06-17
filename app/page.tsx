@@ -1,18 +1,18 @@
-import SectionView from "@/components/organisms/SectionView";
-import Link from "next/link";
+import SectionView from '@/components/organisms/SectionView'
+import Link from 'next/link'
 
 export default function Home() {
   return (
     <main className="flex flex-col">
       <SectionView>
         <div className="m-auto">
-          <Link href={"/layout"}>
+          <Link href={'/layout'}>
             <p>Layout</p>
           </Link>
-          <Link href={"/feature"}>
+          <Link href={'/feature'}>
             <p>Feature</p>
           </Link>
-          <Link href={"/about"}>
+          <Link href={'/about'}>
             <p>About</p>
           </Link>
         </div>

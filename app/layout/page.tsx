@@ -1,4 +1,4 @@
-import SectionView from "@/components/organisms/SectionView";
+import SectionView from '@/components/organisms/SectionView'
 
 export default function Layout() {
   return (

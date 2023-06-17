@@ -1,9 +1,9 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react'
 
 export default function SectionView({ children }: { children?: ReactNode }) {
-    return (
-        <section className="w-[100svw] md:w-[100lvw] min-h-[100svh] md:min-h-[100lvh] border-2 border-red-500 border-dashed flex flex-col">
-            {children}
-        </section>
-    )
+  return (
+    <section className="box-border flex min-h-[100svh] w-[100svw] flex-col border-2 border-dashed border-red-500 md:min-h-[100lvh] md:w-[100lvw]">
+      {children}
+    </section>
+  )
 }

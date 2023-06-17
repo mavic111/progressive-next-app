@@ -50,5 +50,5 @@ body {
 }
 
 body {
-  @apply overscroll-y-contain overflow-y-scroll no-scrollbar;
+  @apply no-scrollbar overflow-y-scroll overscroll-y-contain;
 }

@@ -8,27 +8,26 @@ const TITLE = 'Progressive Next App'
 export const metadata = {
   title: {
     default: TITLE,
-    template: '%s | ' + TITLE
+    template: '%s | ' + TITLE,
   },
   description: 'A Next.js App Router Progressive Web App',
-  manifest: "/manifest.json",
+  manifest: '/manifest.json',
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: '#F8FAFC' },
-    { media: '(prefers-color-scheme: dark)', color: '#09090B' }
+    { media: '(prefers-color-scheme: dark)', color: '#09090B' },
   ],
   appleWebApp: {
     capable: true,
-    statusBarStyle: "default",
+    statusBarStyle: 'default',
     title: TITLE,
   },
   formatDetection: {
     telephone: false,
   },
   icons: {
-    shortcut: "/favicon.ico",
+    shortcut: '/favicon.ico',
   },
 }
-
 
 export default function RootLayout({
   children,
