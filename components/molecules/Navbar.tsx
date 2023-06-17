@@ -8,6 +8,7 @@ export default function Navbar() {
         {navLinks.map((navLink) => (
           <li key={navLink.id} className="flex md:w-full">
             <Link
+              replace
               className="w-full rounded-lg p-2 hover:bg-white/20 md:rounded-xl md:p-4 lg:flex lg:flex-row lg:items-center lg:space-x-4"
               href={navLink.href}
             >
