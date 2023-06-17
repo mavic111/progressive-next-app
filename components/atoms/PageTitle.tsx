@@ -1,3 +1,5 @@
 export default function PageTitle() {
-  return <span className="leading-none">Title</span>
+  return (
+    <span className="text-2xl font-bold leading-none md:text-3xl">PWA</span>
+  )
 }
