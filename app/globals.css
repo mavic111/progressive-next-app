@@ -50,5 +50,5 @@ body {
 }
 
 body {
-  @apply no-scrollbar overflow-y-scroll overscroll-y-contain;
+  @apply h-[100svh] overscroll-y-contain md:h-[100lvh];
 }
