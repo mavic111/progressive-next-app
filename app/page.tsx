@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex h-[100svh] md:h-[100lvh] flex-col items-center justify-between">
+    <main className="flex flex-col">
       <SectionView>
         <div className="m-auto">
           <Link href={"/layout"}>
