@@ -43,7 +43,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <AppView>
           <Header />
-          <main className="flex h-full w-full flex-row overflow-y-scroll">
+          <main className="flex h-full w-full flex-row overflow-y-hidden">
             <Navbar />
             <main className="flex h-full w-full flex-col pb-24 md:px-6 md:pb-6">
               <ScrollView>{children}</ScrollView>
