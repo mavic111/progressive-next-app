@@ -33,6 +33,7 @@ export default function Navbar() {
       >
         <Link
           replace
+          aria-label={navLink.text}
           className="group w-full rounded-lg px-4 py-2 hover:bg-slate-200 hover:dark:bg-zinc-800 md:rounded-xl md:px-8 md:py-4 lg:flex lg:flex-row lg:items-center lg:space-x-4"
           href={navLink.href}
         >
