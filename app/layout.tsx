@@ -1,9 +1,6 @@
-import Header from '@/components/molecules/Header'
-import '../globals.css'
+import './globals.css'
 import { Inter } from 'next/font/google'
-import Navbar from '@/components/molecules/Navbar'
-import AppView from '@/components/organisms/AppView'
-import ScrollView from '@/components/organisms/ScrollView'
+import AppShell from '@/components/organisms/AppShell'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -41,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <AppView>{children}</AppView>
+        <AppShell>{children}</AppShell>
       </body>
     </html>
   )
