@@ -2,11 +2,9 @@
 
 import { darkThemeColor, lightThemeColor } from '@/constants/themeColor'
 import { forceThemeColor } from '@/lib/utils'
-import { ThemeProvider as NextThemesProvider, useTheme } from 'next-themes'
-import { type ThemeProviderProps } from 'next-themes/dist/types'
-import { useEffect } from 'react'
+import { ReactNode, useEffect } from 'react'
 
-export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
+export default function ThemeAdjuster({ children }: { children: ReactNode }) {
   useEffect(() => {
     // Force theme to suits `theme` cookie.
     const myTheme = window.localStorage.getItem('theme')
@@ -15,7 +13,6 @@ export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
     } else if (myTheme === 'dark') {
       forceThemeColor(darkThemeColor)
     }
-    // If `theme` cookie is `system` or not defined, use default theme color metadata.
   }, [])
-  return <NextThemesProvider {...props}>{children}</NextThemesProvider>
+  return children
 }

@@ -1,9 +1,9 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import { darkThemeColor, lightThemeColor } from '@/constants/themeColor'
+import { ThemeProvider } from '@/components/organisms/ThemeProvider'
 import AppShell from '@/components/organisms/AppShell'
 import { Toaster } from '@/components/ui/toaster'
-import { ThemeProvider } from '@/components/organisms/ThemeProvider'
-import { darkThemeColor, lightThemeColor } from '@/constants/themeColor'
 
 const inter = Inter({ subsets: ['latin'] })
 
