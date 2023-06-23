@@ -95,6 +95,5 @@
   "orientation": "portrait",
   "description": "A Next.js App Router Progressive Web App",
   "dir": "ltr",
-  "lang": "en",
-  "display_override": ["window-controls-overlay"]
+  "lang": "en"
 }
