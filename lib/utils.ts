@@ -5,7 +5,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
-export function forceThemeColor(color: string) {
+export function forceThemeColor(color: string, timeout: number = 0) {
   setTimeout(() => {
     document
       .querySelector(
@@ -17,20 +17,20 @@ export function forceThemeColor(color: string) {
         'meta[name="theme-color"][media="(prefers-color-scheme: dark)"]'
       )
       ?.setAttribute('content', color)
-  }, 300)
+  }, timeout)
 }
 
-export function resetThemeColor() {
+export function resetThemeColor(timeout: number = 0) {
   setTimeout(() => {
     document
       .querySelector(
         'meta[name="theme-color"][media="(prefers-color-scheme: light)"]'
       )
-      ?.setAttribute('content', "#F4F4F5")
+      ?.setAttribute('content', '#F4F4F5')
     document
       .querySelector(
         'meta[name="theme-color"][media="(prefers-color-scheme: dark)"]'
       )
-      ?.setAttribute('content', "#18181B")
-  }, 300)
+      ?.setAttribute('content', '#18181B')
+  }, timeout)
 }
