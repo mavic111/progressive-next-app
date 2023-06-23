@@ -91,7 +91,7 @@
   "background_color": "#FFFFFF",
   "display": "standalone",
   "scope": "/",
-  "theme_color": "#FFFFFF",
+  "theme_color": "#F4F4F5",
   "orientation": "portrait",
   "description": "A Next.js App Router Progressive Web App",
   "dir": "ltr",

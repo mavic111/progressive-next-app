@@ -18,12 +18,12 @@ export function ThemeToggle() {
 
   function setLight() {
     setTheme('light')
-    forceThemeColor('#FFFFFF')
+    forceThemeColor('#F4F4F5')
   }
 
   function setDark() {
     setTheme('dark')
-    forceThemeColor('#09090B')
+    forceThemeColor('#18181B')
   }
 
   function setSystem() {

@@ -26,11 +26,11 @@ export function resetThemeColor() {
       .querySelector(
         'meta[name="theme-color"][media="(prefers-color-scheme: light)"]'
       )
-      ?.setAttribute('content', "#FFFFFF")
+      ?.setAttribute('content', "#F4F4F5")
     document
       .querySelector(
         'meta[name="theme-color"][media="(prefers-color-scheme: dark)"]'
       )
-      ?.setAttribute('content', "#09090B")
+      ?.setAttribute('content', "#18181B")
   }, 300)
 }
