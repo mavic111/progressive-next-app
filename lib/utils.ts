@@ -1,3 +1,4 @@
+import { darkThemeColor, lightThemeColor } from '@/constants/themeColor'
 import { type ClassValue, clsx } from 'clsx'
 import { twMerge } from 'tailwind-merge'
 
@@ -26,11 +27,11 @@ export function resetThemeColor(timeout: number = 0) {
       .querySelector(
         'meta[name="theme-color"][media="(prefers-color-scheme: light)"]'
       )
-      ?.setAttribute('content', '#F4F4F5')
+      ?.setAttribute('content', lightThemeColor)
     document
       .querySelector(
         'meta[name="theme-color"][media="(prefers-color-scheme: dark)"]'
       )
-      ?.setAttribute('content', '#18181B')
+      ?.setAttribute('content', darkThemeColor)
   }, timeout)
 }

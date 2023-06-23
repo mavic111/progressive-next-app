@@ -1,5 +1,6 @@
 'use client'
 
+import { darkThemeColor, lightThemeColor } from '@/constants/themeColor'
 import { forceThemeColor, resetThemeColor } from '@/lib/utils'
 import { ThemeProvider as NextThemesProvider } from 'next-themes'
 import { type ThemeProviderProps } from 'next-themes/dist/types'
@@ -10,9 +11,9 @@ export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
     // Force theme to suits `theme` cookie.
     const theme = window.localStorage.getItem('theme')
     if (theme === 'light') {
-      forceThemeColor('#F4F4F5')
+      forceThemeColor(lightThemeColor)
     } else if (theme === 'dark') {
-      forceThemeColor('#18181B')
+      forceThemeColor(darkThemeColor)
     }
     // If `theme` cookie is `system` or not defined, use default theme color metadata. 
   }, [])

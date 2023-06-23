@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import AppShell from '@/components/organisms/AppShell'
 import { Toaster } from '@/components/ui/toaster'
 import { ThemeProvider } from '@/components/organisms/ThemeProvider'
+import { darkThemeColor, lightThemeColor } from '@/constants/themeColor'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,8 +17,8 @@ export const metadata = {
   description: 'A Next.js App Router Progressive Web App',
   manifest: '/manifest.json',
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#F4F4F5' },
-    { media: '(prefers-color-scheme: dark)', color: '#18181B' },
+    { media: '(prefers-color-scheme: light)', color: lightThemeColor },
+    { media: '(prefers-color-scheme: dark)', color: darkThemeColor },
   ],
   appleWebApp: {
     capable: true,

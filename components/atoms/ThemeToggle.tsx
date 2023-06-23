@@ -3,7 +3,6 @@
 import * as React from 'react'
 import { Moon, Sun } from 'lucide-react'
 import { useTheme } from 'next-themes'
-
 import { Button } from '@/components/ui/button'
 import {
   DropdownMenu,
@@ -12,18 +11,19 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
 import { forceThemeColor, resetThemeColor } from '@/lib/utils'
+import { darkThemeColor, lightThemeColor } from '@/constants/themeColor'
 
 export function ThemeToggle() {
   const { setTheme } = useTheme()
 
   function setLight() {
     setTheme('light')
-    forceThemeColor('#F4F4F5')
+    forceThemeColor(lightThemeColor)
   }
 
   function setDark() {
     setTheme('dark')
-    forceThemeColor('#18181B')
+    forceThemeColor(darkThemeColor)
   }
 
   function setSystem() {
@@ -33,7 +33,7 @@ export function ThemeToggle() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" size="icon">
+        <Button variant="ghost" size="icon">
           <Sun className="h-6 w-6 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
           <Moon className="absolute h-6 w-6 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
           <span className="sr-only">Toggle theme</span>

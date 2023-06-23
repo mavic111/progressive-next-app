@@ -8,7 +8,7 @@ export default function Toolbar() {
   return (
     <div className="grid min-w-max grid-cols-2 items-center gap-2">
       <ThemeToggle />
-      <Button variant="outline" size="icon">
+      <Button variant="ghost" size="icon">
         <Bell className="h-6 w-6" />
         <span className="sr-only">Open notifications</span>
       </Button>
