@@ -4,8 +4,7 @@ import Section from '@/components/organisms/Section'
 export default function Layout() {
   return (
     <ScrollView>
-      <Section>Layout</Section>
-      <Section>Layout 2</Section>
+      <Section></Section>
     </ScrollView>
   )
 }

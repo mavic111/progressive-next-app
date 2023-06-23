@@ -32,11 +32,20 @@ export default function Navbar() {
           )}
           href={navLink.href}
         >
-          <div>{navLink.icon}</div>
+          <div
+            className={clsx(
+              'first:text-black/50 group-hover:first:text-black first:dark:text-white/50 group-hover:dark:first:text-white',
+              {
+                'first:text-black first:dark:text-white': isActive,
+              }
+            )}
+          >
+            {navLink.icon}
+          </div>
           <p
             className={clsx('text-lg font-medium leading-none max-lg:hidden', {
               'text-black dark:text-white': isActive,
-              'text-black/70 group-hover:text-black dark:text-white/70 dark:group-hover:text-white':
+              'text-black/70 group-hover:text-black dark:text-white/70 group-hover:dark:text-white':
                 !isActive,
             })}
           >
