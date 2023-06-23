@@ -1,10 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  modularizeImports: {
-    '@heroicons/react/24/outline/?(((\\w*)?/?)*)': {
-      transform: '@heroicons/react/24/outline/{{ matches.[1] }}/{{member}}',
-    },
-  },
+  reactStrictMode: true,
 }
 
 const withPWA = require('@ducanh2912/next-pwa').default({

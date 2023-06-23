@@ -1,6 +1,8 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import AppShell from '@/components/organisms/AppShell'
+import { Toaster } from '@/components/ui/toaster'
+import { ThemeProvider } from '@/components/organisms/ThemeProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,7 +16,7 @@ export const metadata = {
   description: 'A Next.js App Router Progressive Web App',
   manifest: '/manifest.json',
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#F8FAFC' },
+    { media: '(prefers-color-scheme: light)', color: '#FAFAFA' },
     { media: '(prefers-color-scheme: dark)', color: '#09090B' },
   ],
   appleWebApp: {
@@ -36,9 +38,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <AppShell>{children}</AppShell>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <AppShell>{children}</AppShell>
+          <Toaster />
+        </ThemeProvider>
       </body>
     </html>
   )

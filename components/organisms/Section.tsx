@@ -1,8 +1,17 @@
 import { ReactNode } from 'react'
 
-export default function Section({ children }: { children?: ReactNode }) {
+export default function Section({
+  children,
+  color,
+}: {
+  children?: ReactNode
+  color?: string
+}) {
   return (
-    <section className="box-border min-h-full w-full border-2 border-dashed border-red-500 bg-slate-100 dark:bg-zinc-900">
+    <section
+      style={{ backgroundColor: color ? color : 'transparent' }}
+      className="box-border min-h-full w-full p-4"
+    >
       {children}
     </section>
   )

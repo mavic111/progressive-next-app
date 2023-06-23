@@ -4,8 +4,8 @@ import Section from '@/components/organisms/Section'
 export default function About() {
   return (
     <ScrollView>
-      <Section>About</Section>
-      <Section>About 2</Section>
+      <Section color="blue"></Section>
+      <Section color="purple"></Section>
     </ScrollView>
   )
 }
