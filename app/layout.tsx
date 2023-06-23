@@ -17,7 +17,7 @@ export const metadata = {
   manifest: '/manifest.json',
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: '#F4F4F5' },
-    { media: '(prefers-color-scheme: dark)', color: '##18181B' },
+    { media: '(prefers-color-scheme: dark)', color: '#18181B' },
   ],
   appleWebApp: {
     capable: true,
