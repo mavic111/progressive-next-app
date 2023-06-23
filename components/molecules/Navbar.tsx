@@ -44,7 +44,7 @@ export default function Navbar() {
     )
   })
   return (
-    <nav className="flex w-full min-w-min justify-center bg-zinc-50 p-4 dark:bg-zinc-950 max-md:fixed max-md:bottom-0 max-md:z-20 md:z-0 md:flex md:max-w-max md:grow md:bg-transparent md:p-0 md:dark:bg-transparent">
+    <nav className="flex w-full min-w-min justify-center bg-transparent p-4 max-md:fixed max-md:bottom-0 max-md:z-20 md:z-0 md:flex md:max-w-max md:grow md:p-0">
       <ol className="flex h-full w-full max-w-sm items-center justify-around rounded-3xl bg-zinc-100 px-4 py-2 shadow-md dark:bg-zinc-900 md:h-fit md:flex-col md:justify-start md:gap-4 md:rounded-none md:bg-transparent md:p-0 md:shadow-none md:dark:bg-transparent">
         {NavLinks}
       </ol>
