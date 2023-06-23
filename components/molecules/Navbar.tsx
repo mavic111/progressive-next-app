@@ -18,13 +18,13 @@ export default function Navbar() {
       <motion.li
         key={navLink.id}
         whileTap={{ scale: 0.95 }}
-        className="flex md:w-full"
+        className="flex lg:w-full"
       >
         <Link
           replace
           aria-label={navLink.text}
           className={clsx(
-            'group rounded-lg p-2 hover:bg-zinc-200 hover:dark:bg-zinc-800 md:w-full md:rounded-xl md:px-8 md:py-4 md:hover:bg-zinc-100 md:hover:dark:bg-zinc-900 lg:flex lg:flex-row lg:items-center lg:space-x-4',
+            'group rounded-lg p-2 hover:bg-zinc-200 hover:dark:bg-zinc-800 md:rounded-xl md:p-4 md:hover:bg-zinc-100 md:hover:dark:bg-zinc-900 lg:flex lg:w-full lg:flex-row lg:items-center lg:space-x-4 lg:px-8 lg:py-4',
             {
               'bg-zinc-200 dark:bg-zinc-800 md:bg-zinc-100 md:dark:bg-zinc-900':
                 isActive,
