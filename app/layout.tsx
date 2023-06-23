@@ -16,8 +16,8 @@ export const metadata = {
   description: 'A Next.js App Router Progressive Web App',
   manifest: '/manifest.json',
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#FFFFFF' },
-    { media: '(prefers-color-scheme: dark)', color: '#09090B' },
+    { media: '(prefers-color-scheme: light)', color: '#F4F4F5' },
+    { media: '(prefers-color-scheme: dark)', color: '##18181B' },
   ],
   appleWebApp: {
     capable: true,
