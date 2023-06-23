@@ -5,6 +5,7 @@ export default function PageTitle() {
     <div className="relative h-6 w-12 md:h-8 md:w-16">
       <Image
         style={{ objectFit: 'contain' }}
+        className="dark:invert"
         fill
         src={'/pwa.svg'}
         alt={'Logo'}
