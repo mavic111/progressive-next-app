@@ -25,7 +25,10 @@ export default function Navbar() {
           aria-label={navLink.text}
           className={clsx(
             'group rounded-lg p-2 hover:bg-zinc-200 hover:dark:bg-zinc-800 md:w-full md:rounded-xl md:px-8 md:py-4 md:hover:bg-zinc-100 md:hover:dark:bg-zinc-900 lg:flex lg:flex-row lg:items-center lg:space-x-4',
-            { 'bg-zinc-100 dark:bg-zinc-900': isActive }
+            {
+              'bg-zinc-200 dark:bg-zinc-800 md:bg-zinc-100 md:dark:bg-zinc-900':
+                isActive,
+            }
           )}
           href={navLink.href}
         >
