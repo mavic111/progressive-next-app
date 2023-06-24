@@ -11,9 +11,9 @@ export default function Geolocation() {
         <CardHeader>
           <h1>Geolocation</h1>
           <p>
-            The Geolocation API is used to retrieve the user's location, so that
-            it can for example be used to display their position using a mapping
-            API.
+            The Geolocation API is used to retrieve the user&apos;s location, so
+            that it can for example be used to display their position using a
+            mapping API.
           </p>
         </CardHeader>
         <CardFooter>
