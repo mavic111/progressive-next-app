@@ -45,7 +45,7 @@ export default function Navbar() {
           >
             {navLink.icon}
           </div>
-          <p
+          <span
             className={clsx('text-lg font-medium leading-none max-lg:hidden', {
               'text-black dark:text-white': isActive,
               'text-black/70 group-hover:text-black dark:text-white/70 group-hover:dark:text-white':
@@ -53,7 +53,7 @@ export default function Navbar() {
             })}
           >
             {navLink.text}
-          </p>
+          </span>
         </Link>
       </motion.li>
     )

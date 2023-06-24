@@ -2,7 +2,6 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import { darkThemeColor, lightThemeColor } from '@/constants/themeColor'
 import { ThemeProvider } from '@/components/organisms/ThemeProvider'
-import AppShell from '@/components/organisms/AppShell'
 import { Toaster } from '@/components/ui/toaster'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -42,7 +41,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <AppShell>{children}</AppShell>
+          {children}
           <Toaster />
         </ThemeProvider>
       </body>

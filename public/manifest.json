@@ -95,5 +95,6 @@
   "orientation": "portrait",
   "description": "A Next.js App Router Progressive Web App",
   "dir": "ltr",
-  "lang": "en"
+  "lang": "en",
+  "permissions": ["geolocation"]
 }
