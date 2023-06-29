@@ -1,10 +1,10 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Work_Sans } from 'next/font/google'
 import { darkThemeColor, lightThemeColor } from '@/constants/themeColor'
 import { ThemeProvider } from '@/components/organisms/ThemeProvider'
 import { Toaster } from '@/components/ui/toaster'
 
-const inter = Inter({ subsets: ['latin'] })
+const font = Work_Sans({ weight: 'variable', subsets: ['latin'] })
 
 const TITLE = 'Progressive Next App'
 
@@ -39,7 +39,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={font.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
           <Toaster />
