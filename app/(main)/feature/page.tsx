@@ -45,7 +45,7 @@ const green_apis = [
     id: 3,
     title: 'WebRTC API',
     description: 'Real-Time communication using WebRTC API',
-    path: '/feature/geolocation',
+    path: '/feature/webrtc',
   },
   {
     id: 4,
