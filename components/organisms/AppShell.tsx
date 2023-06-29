@@ -11,9 +11,7 @@ export default function AppShell({ children }: { children?: ReactNode }) {
       <Header />
       <main className="flex h-full w-full flex-row overflow-y-hidden md:gap-8 md:p-4">
         <Navbar />
-        <main className="flex w-full flex-col max-md:pb-[6.5rem]">
-          {children}
-        </main>
+        <main className="flex w-full flex-col max-md:pb-20">{children}</main>
       </main>
     </main>
   )

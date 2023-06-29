@@ -24,9 +24,9 @@ export default function Navbar() {
           replace
           aria-label={navLink.text}
           className={clsx(
-            'group rounded-xl p-2 hover:bg-zinc-200 hover:dark:bg-zinc-800 md:rounded-xl md:p-4 md:hover:bg-zinc-100 md:hover:dark:bg-zinc-900 lg:flex lg:w-full lg:flex-row lg:items-center lg:space-x-4 lg:px-8 lg:py-4',
+            'group rounded-xl p-2 hover:bg-zinc-100 hover:dark:bg-zinc-900 md:rounded-xl md:p-4 md:hover:bg-zinc-100 md:hover:dark:bg-zinc-900 lg:flex lg:w-full lg:flex-row lg:items-center lg:space-x-4 lg:px-8 lg:py-4',
             {
-              'bg-zinc-200 dark:bg-zinc-800 md:bg-zinc-100 md:dark:bg-zinc-900':
+              'bg-zinc-100 dark:bg-zinc-900 md:bg-zinc-100 md:dark:bg-zinc-900':
                 isActive,
             }
           )}
@@ -58,9 +58,10 @@ export default function Navbar() {
       </motion.li>
     )
   })
+  
   return (
-    <nav className="flex w-full min-w-min justify-center bg-transparent p-4 max-md:fixed max-md:bottom-0 max-md:z-20 md:z-0 md:flex md:max-w-max md:grow md:p-0">
-      <ol className="flex h-full w-full max-w-sm items-center justify-between gap-4 rounded-3xl bg-zinc-100 p-3 shadow-md dark:bg-zinc-900 md:h-fit md:flex-col md:justify-start md:rounded-none md:bg-transparent md:p-0 md:shadow-none md:dark:bg-transparent">
+    <nav className="flex w-full min-w-min justify-center max-md:fixed max-md:bottom-0 max-md:z-20 md:z-0 md:flex md:max-w-max md:grow md:p-0">
+      <ol className="flex h-full w-full max-w-sm items-center justify-between gap-4 rounded-3xl p-4 md:h-fit md:flex-col md:justify-start md:rounded-none md:bg-transparent md:p-0 md:shadow-none md:dark:bg-transparent">
         {NavLinks}
       </ol>
     </nav>
