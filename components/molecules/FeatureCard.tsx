@@ -8,7 +8,7 @@ export default function FeatureCard({
   description: string
 }) {
   return (
-    <Card className="h-full w-full">
+    <Card className="h-full w-full min-w-fit">
       <CardHeader>
         <CardTitle>{title}</CardTitle>
         <CardDescription>{description}</CardDescription>
