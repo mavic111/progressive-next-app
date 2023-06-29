@@ -4,7 +4,9 @@ import Section from '@/components/organisms/Section'
 export default function Home() {
   return (
     <ScrollView>
-      <Section></Section>
+      <Section>
+        <p className="text-3xl font-bold">Explore Recent Features</p>
+      </Section>
     </ScrollView>
   )
 }
