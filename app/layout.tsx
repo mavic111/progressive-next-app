@@ -1,10 +1,10 @@
 import './globals.css'
-import { Work_Sans } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 import { darkThemeColor, lightThemeColor } from '@/constants/themeColor'
 import { ThemeProvider } from '@/components/organisms/ThemeProvider'
 import { Toaster } from '@/components/ui/toaster'
 
-const font = Work_Sans({ weight: 'variable', subsets: ['latin'] })
+const font = Montserrat({ weight: 'variable', subsets: ['latin'] })
 
 const TITLE = 'Progressive Next App'
 
