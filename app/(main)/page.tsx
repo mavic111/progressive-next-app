@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <ScrollView>
       <Section>
-        <p className="text-3xl font-bold">Explore Recent Features</p>
+        <h1>Explore Recent Features</h1>
       </Section>
     </ScrollView>
   )

@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Home, LayoutPanelLeft, CircuitBoard, Info } from 'lucide-react'
+import { Home, LayoutPanelLeft, CircuitBoard, Info, Bot } from 'lucide-react'
 import clsx from 'clsx'
 import { motion } from 'framer-motion'
 
@@ -58,7 +58,7 @@ export default function Navbar() {
       </motion.li>
     )
   })
-  
+
   return (
     <nav className="flex w-full min-w-min justify-center max-md:fixed max-md:bottom-0 max-md:z-20 md:z-0 md:flex md:max-w-max md:grow md:p-0">
       <ol className="flex h-full w-full max-w-sm items-center justify-between gap-4 rounded-3xl p-4 md:h-fit md:flex-col md:justify-start md:rounded-none md:bg-transparent md:p-0 md:shadow-none md:dark:bg-transparent">
@@ -77,15 +77,15 @@ const navLinks = [
   },
   {
     id: 1,
-    href: '/layout',
-    text: 'Layout',
-    icon: <LayoutPanelLeft className="h-8 w-8" />,
-  },
-  {
-    id: 2,
     href: '/feature',
     text: 'Feature',
     icon: <CircuitBoard className="h-8 w-8" />,
+  },
+  {
+    id: 2,
+    href: '/chatbot',
+    text: 'chatbot',
+    icon: <Bot className="h-8 w-8" />,
   },
   {
     id: 3,
