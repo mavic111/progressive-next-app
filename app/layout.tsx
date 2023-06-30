@@ -4,7 +4,11 @@ import { darkThemeColor, lightThemeColor } from '@/constants/themeColor'
 import { ThemeProvider } from '@/components/organisms/ThemeProvider'
 import { Toaster } from '@/components/ui/toaster'
 
-const font = Montserrat({ weight: 'variable', subsets: ['latin'] })
+const font = Montserrat({
+  weight: 'variable',
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 const TITLE = 'Progressive Next App'
 
@@ -28,7 +32,9 @@ export const metadata = {
     telephone: false,
   },
   icons: {
-    shortcut: '/favicon.ico',
+    icon: '/favicon.ico',
+    shortcut: '/favicon-48x48.png',
+    apple: '/apple-touch-icon.png',
   },
 }
 
