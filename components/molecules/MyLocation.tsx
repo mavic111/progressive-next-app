@@ -1,6 +1,7 @@
 'use client'
 
-import { useLocation } from '@/hooks/useLocation'
+
+import { useLocation } from '@/pwa/geolocation'
 import dynamic from 'next/dynamic'
 const DynamicMap = dynamic(() => import('../molecules/Map'), { ssr: false })
 
