@@ -5,7 +5,7 @@ declare let self: ServiceWorkerGlobalScope
 
 // Before Install Prompt
 
-self.addEventListener("beforeinstallprompt", (event) => {})
+self.addEventListener('beforeinstallprompt', (event) => {})
 
 // Push Notifiations
 interface Data {
