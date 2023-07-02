@@ -6,9 +6,9 @@ import Link from 'next/link'
 export default function Feature() {
   return (
     <ScrollView>
-      <Section>
+      <Section className="min-h-full p-4">
         <h1 className="text-green-500">Green API</h1>
-        <ul className="my-4 grid grid-cols-1 gap-4 md:my-6 md:grid-cols-3 md:gap-6 xl:grid-cols-4">
+        <ul className="grid grid-cols-1 gap-4 py-4 md:my-6 md:grid-cols-3 md:gap-6 xl:grid-cols-4">
           {green_apis.map((api) => (
             <Link key={api.id} href={api.path}>
               <FeatureCard title={api.title} description={api.description} />

@@ -1,10 +1,11 @@
 import ScrollView from '@/components/organisms/ScrollView'
+import Section from '@/components/organisms/Section'
 
 export default function About() {
   return (
     <ScrollView>
-      <section className="p-4">
-        <h1 className="">Progressive Next App</h1>
+      <Section className="min-h-full p-4">
+        <h1>Progressive Next App</h1>
         <p>
           Progressive Next App is a cutting-edge Next.js application that
           seamlessly combines the power of Next.js with Progressive Web App
@@ -15,7 +16,7 @@ export default function About() {
           notifications, and enjoy smooth navigation through an app-like
           interface.
         </p>
-      </section>
+      </Section>
     </ScrollView>
   )
 }
