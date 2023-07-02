@@ -8,7 +8,7 @@ export default function FeatureLayout({
 }) {
   return (
     <FeatureShell>
-      <ScrollView>{children}</ScrollView>
+      {children}
     </FeatureShell>
   )
 }
