@@ -13,7 +13,7 @@ export default function Section({
   return (
     <section
       style={{ backgroundColor: color ? color : 'transparent' }}
-      className={clsx('flex w-full flex-col space-y-4 p-4 md:p-0', className)}
+      className={clsx('relative flex w-full flex-col space-y-4', className)}
     >
       {children}
     </section>
