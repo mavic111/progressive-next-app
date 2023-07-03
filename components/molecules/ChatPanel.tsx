@@ -1,17 +1,11 @@
 'use client'
 
-import { useId } from 'react'
-import { UseChatOptions, useChat } from 'ai/react'
+import { useChat } from 'ai/react'
 import { Button } from '../ui/button'
 import { Bot, User } from 'lucide-react'
 
 export default function ChatPanel() {
-  const useChatWrapper = (options?: UseChatOptions) => {
-    const id = useId()
-    const chat = useChat({ ...(options ?? {}), id })
-    return chat
-  }
-  const { messages, input, handleInputChange, handleSubmit } = useChatWrapper()
+  const { messages, input, handleInputChange, handleSubmit } = useChat()
   return (
     <div className="mx-auto flex h-full w-full max-w-2xl flex-col justify-between">
       <div className="no-scrollbar h-full space-y-4 overflow-y-scroll py-4">
