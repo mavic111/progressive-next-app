@@ -7,9 +7,12 @@ export default function Feature() {
   return (
     <ScrollView>
       <Section className="min-h-full p-4">
-        <h1 className="text-green-500">Green API</h1>
+        <h1>Web API</h1>
+        <h4 className="text-zinc-600 dark:text-zinc-400">
+          JavaScript programming APIs you can use to build apps on the Web.
+        </h4>
         <ul className="grid grid-cols-1 gap-4 py-4 md:my-6 md:grid-cols-3 md:gap-6 xl:grid-cols-4">
-          {green_apis.map((api) => (
+          {web_apis.map((api) => (
             <Link key={api.id} href={api.path}>
               <FeatureCard title={api.title} description={api.description} />
             </Link>
@@ -20,7 +23,7 @@ export default function Feature() {
   )
 }
 
-const green_apis = [
+const web_apis = [
   {
     id: 0,
     title: 'Geolocation API',
