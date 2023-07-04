@@ -24,7 +24,7 @@ export default function Navbar() {
           replace
           aria-label={navLink.text}
           className={clsx(
-            'group flex w-full flex-col items-center space-y-1 rounded-xl p-2 hover:bg-zinc-100 hover:dark:bg-zinc-900 md:flex md:rounded-xl md:hover:bg-zinc-100 md:hover:dark:bg-zinc-900 lg:flex-row lg:items-center lg:space-x-4 lg:p-4 lg:px-8 lg:py-4',
+            'group flex w-full flex-col items-center space-y-1 rounded-xl p-2 hover:bg-zinc-100 hover:dark:bg-zinc-900 md:flex md:rounded-xl md:hover:bg-zinc-100 md:hover:dark:bg-zinc-900 lg:flex-row lg:items-center lg:space-x-4 lg:px-8 lg:py-4',
             {
               'bg-zinc-100 dark:bg-zinc-900 md:bg-zinc-100 md:dark:bg-zinc-900':
                 isActive,
@@ -64,7 +64,7 @@ export default function Navbar() {
 
   return (
     <nav className="flex w-full min-w-min max-md:fixed max-md:bottom-0 max-md:z-20 max-md:justify-center md:z-0 md:max-w-max md:grow md:flex-col lg:mx-4">
-      <ol className="grid h-full w-full max-w-sm grid-cols-4 gap-2 rounded-3xl p-4 md:h-fit md:grid-cols-1 md:flex-col md:justify-start md:rounded-none md:bg-transparent md:p-0 md:shadow-none md:dark:bg-transparent">
+      <ol className="grid h-full w-full max-w-sm grid-cols-4 gap-2 rounded-3xl p-4 md:h-fit md:grid-cols-1 md:flex-col md:justify-start md:gap-4 md:rounded-none md:bg-transparent md:p-0 md:shadow-none md:dark:bg-transparent">
         {NavLinks}
       </ol>
     </nav>

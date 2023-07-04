@@ -119,4 +119,7 @@
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
+  .button-icon {
+    @apply h-8 w-8;
+  }
 }
