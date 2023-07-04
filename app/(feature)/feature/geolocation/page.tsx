@@ -2,7 +2,7 @@ import MyLocation from '@/components/molecules/MyLocation'
 import ScrollView from '@/components/organisms/ScrollView'
 import Section from '@/components/organisms/Section'
 import { Button } from '@/components/ui/button'
-import { Card, CardFooter, CardHeader } from '@/components/ui/card'
+import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 import Link from 'next/link'
 
 export default function Geolocation() {
@@ -39,8 +39,11 @@ export default function Geolocation() {
             </div>
           </CardFooter>
         </Card>
-
-        <MyLocation />
+        <Card className="flex h-max flex-col rounded-2xl bg-violet-200 dark:bg-violet-800">
+          <CardContent className="pt-6">
+            <MyLocation />
+          </CardContent>
+        </Card>
       </Section>
     </ScrollView>
   )

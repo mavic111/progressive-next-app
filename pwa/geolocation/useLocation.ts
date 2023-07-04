@@ -1,17 +1,18 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
-const geoOptions: PositionOptions = {
-  timeout: 10 * 1000,
-  enableHighAccuracy: true,
-  maximumAge: 0,
-}
+export default function useLocation(geoOptions: PositionOptions) {
+  // const geoOptions: PositionOptions = {
+  //   timeout: props.timeout,
+  //   enableHighAccuracy: props.enableHighAccuracy,
+  //   maximumAge: props.maximumAge
+  // }
 
-export default function useLocation() {
   const [position, setPosition] = useState<GeolocationPosition>()
   const [error, setError] = useState<string>()
   const [isLoading, setIsLoading] = useState<boolean>(false)
   const [watchID, setWatchID] = useState<number>()
   const [isTracking, setIsTracking] = useState<boolean>(false)
+  const watchIDRef = useRef<number>()
 
   function successCallback(position: GeolocationPosition) {
     console.log(position.coords)
@@ -41,13 +42,13 @@ export default function useLocation() {
     if (!navigator.geolocation) {
       setError('Geolocation is not supported by your browser')
     } else {
-      console.log('Watching...')
+      console.log('Tracking...')
       const watchID = navigator.geolocation.watchPosition(
         successCallback,
         errorCallback,
         geoOptions
       )
-      console.log(watchID)
+      console.log('TrackingID:', watchID)
       setWatchID(watchID)
       setIsTracking(true)
       setIsLoading(false)
@@ -69,8 +70,28 @@ export default function useLocation() {
     }
   }
 
+  function cleanTracker(watchID: number) {
+    if (!navigator.geolocation) {
+      setError('Geolocation is not supported by your browser')
+    } else {
+      console.log('Cleaning up watch..', watchID)
+      navigator.geolocation.clearWatch(watchID)
+    }
+  }
+
+  useEffect(() => {
+    watchIDRef.current = watchID
+  }, [watchID])
+
   useEffect(() => {
     locateMe()
+    return () => {
+      if (watchIDRef.current) {
+        cleanTracker(watchIDRef.current)
+      } else {
+        console.log('Watch clean..')
+      }
+    }
   }, [])
   return {
     position,
