@@ -8,7 +8,7 @@ import Link from 'next/link'
 export default function Geolocation() {
   return (
     <ScrollView>
-      <Section className="grid grid-cols-1 gap-4 p-4 md:grid-cols-2 md:gap-6 md:p-6 lg:gap-8 lg:p-8">
+      <Section className="mx-auto grid max-w-5xl grid-cols-1 gap-4 p-4 md:gap-6 md:p-6 lg:gap-8 lg:p-8">
         <Card className="flex h-max flex-col justify-between rounded-2xl bg-violet-200 dark:bg-violet-800">
           <CardHeader>
             <h1>Geolocation</h1>
