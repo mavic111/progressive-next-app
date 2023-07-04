@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function PageTitle() {
   return (
-    <div className="relative aspect-[2/1] h-8">
+    <div className="relative aspect-[2/1] h-6 md:h-8">
       <Image
         loading="eager"
         style={{ objectFit: 'contain' }}
