@@ -1,12 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 
-export default function useLocation(geoOptions: PositionOptions) {
-  // const geoOptions: PositionOptions = {
-  //   timeout: props.timeout,
-  //   enableHighAccuracy: props.enableHighAccuracy,
-  //   maximumAge: props.maximumAge
-  // }
-
+export default function useGeolocation(geoOptions: PositionOptions) {
   const [position, setPosition] = useState<GeolocationPosition>()
   const [error, setError] = useState<string>()
   const [isLoading, setIsLoading] = useState<boolean>(false)

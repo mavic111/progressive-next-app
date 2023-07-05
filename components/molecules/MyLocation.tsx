@@ -1,6 +1,6 @@
 'use client'
 
-import { useLocation } from '@/pwa/geolocation'
+import { useGeolocation } from '@/pwa/geolocation'
 import dynamic from 'next/dynamic'
 import { Button } from '../ui/button'
 const DynamicMap = dynamic(() => import('../molecules/Map'), { ssr: false })
@@ -14,7 +14,7 @@ export default function MyLocation() {
     isTracking,
     trackMe,
     stopTrackMe,
-  } = useLocation({
+  } = useGeolocation({
     timeout: 10 * 1000,
     enableHighAccuracy: true,
     maximumAge: 0,

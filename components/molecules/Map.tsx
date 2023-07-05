@@ -30,13 +30,15 @@ export default function Map({
   latitude: number
   longitude: number
 }) {
+  console.log(latitude)
+  console.log(longitude)
   return (
     <MapContainer
       className="h-full w-full"
       center={[latitude, longitude]}
       zoom={16}
-      scrollWheelZoom={false}
-      zoomControl={false}
+      scrollWheelZoom={true}
+      zoomControl={true}
     >
       <TileLayer
         className="map"
