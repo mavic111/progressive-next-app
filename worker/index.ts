@@ -3,11 +3,7 @@
 export default null
 declare let self: ServiceWorkerGlobalScope
 
-// Before Install Prompt
-
-self.addEventListener('beforeinstallprompt', (event) => {})
-
-// Push Notifiations
+// Push Notifications
 interface Data {
   title: string
   body: string
