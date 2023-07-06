@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function Feature() {
   return (
     <ScrollView>
-      <Section className="min-h-full p-4">
+      <Section className="min-h-full p-4 md:p-0">
         <h1>Web API</h1>
         <h4 className="text-zinc-600 dark:text-zinc-400">
           JavaScript programming APIs you can use to build apps on the Web.

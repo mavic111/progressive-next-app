@@ -4,7 +4,7 @@ import Section from '@/components/organisms/Section'
 export default function Home() {
   return (
     <ScrollView>
-      <Section className="min-h-full p-4">
+      <Section className="min-h-full p-4 md:p-0">
         <h1>Explore Recent Features</h1>
       </Section>
     </ScrollView>

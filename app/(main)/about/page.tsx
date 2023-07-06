@@ -4,7 +4,7 @@ import Section from '@/components/organisms/Section'
 export default function About() {
   return (
     <ScrollView>
-      <Section className="min-h-full p-4">
+      <Section className="min-h-full p-4 md:p-0">
         <h1>Progressive Next App</h1>
         <p>
           Progressive Next App is a cutting-edge Next.js application that
